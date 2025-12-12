@@ -1,15 +1,10 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /Fulladder/a
-add wave -noupdate /Fulladder/b
-add wave -noupdate /Fulladder/cin
-add wave -noupdate /Fulladder/sum
-add wave -noupdate /Fulladder/carry
-add wave -noupdate /Fulladder/a
-add wave -noupdate /Fulladder/b
-add wave -noupdate /Fulladder/cin
-add wave -noupdate /Fulladder/sum
-add wave -noupdate /Fulladder/carry
+add wave -noupdate /Fullsub/a
+add wave -noupdate /Fullsub/b
+add wave -noupdate /Fullsub/bin
+add wave -noupdate /Fullsub/diff
+add wave -noupdate /Fullsub/borrow
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}
 quietly wave cursor active 0
@@ -27,4 +22,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {9178 ps}
+WaveRestoreZoom {0 ps} {1 ns}
